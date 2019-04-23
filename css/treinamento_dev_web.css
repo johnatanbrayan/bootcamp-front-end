@@ -1,0 +1,111 @@
+*{margin:0;padding:0;border:0;}
+body{
+    background-color:#f6f6f6;
+    /*display:block;*/
+}
+main{
+    width:955px;
+    margin: 7px auto 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+header img{
+    width:100%;
+}
+nav{
+    margin-top: -4px;
+    width: 100%;
+    list-style-type:none;
+    background-color:#5d240a;
+    padding: 8px;
+    box-sizing: border-box;
+}
+nav li{
+    display: inline-block;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;    
+    padding: 3px 19px;
+
+}
+nav li a:hover{
+    background-color:#cc6633;
+}
+article{
+    float: left;
+    /* width:615px; */
+    width:65%;
+    margin: 30px 20px;
+}
+article header{
+    margin-bottom: 40px;  
+}
+article header h1{
+    font-size: 2.5em;
+    font-style: italic;
+}
+article header h5{
+    color:#ccc;
+    font-size: 1.1em;
+    font-weight:100;
+    margin-top:-15px;
+}
+article h1,h2,h4,h5{
+    color: #C63;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    margin: 15px 0px;
+}
+article p, article li{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 0.9em;
+    color:#555555;
+    text-align: justify;
+    line-height: 1.8;
+    padding:10px 0px;
+}
+article p{
+    padding:10px 0px;
+}
+article li{
+    margin-left: 30px;
+}
+aside p{
+    /* background-image:url(../imagens/aspas.gif); 
+    background-repeat: no-repeat;
+    background-position: left top;  */
+    background: url(../imagens/aspas.gif) no-repeat left top;
+    color: black;
+    text-align: center;
+    border-top: 1px solid #C63;
+    border-bottom: 1px solid #C63;
+    padding:50px 10px 15px;
+    margin: 10px 20px 0px 0;
+    float: left;
+    width: 230px;
+    font-style:italic;
+}
+#apoio{
+    margin-top:45px;
+    float:right;
+    /* width: 290px; */
+    width:30.5%;
+}
+.apoio-foto img{
+    height: 100%;
+    box-sizing: border-box;
+}
+.apoio-foto a{
+    text-decoration:none;
+}
+footer{
+    clear:both;
+    text-align: center;
+    margin: 15px 0;
+    background-color:#ccc;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
