@@ -1,0 +1,194 @@
+*{margin:0;padding:0;border:0;}
+
+body{
+    background-color:#f6f6f6;
+    overflow:auto;
+    /*display:block;*/
+}
+main{
+    width:60%;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #333;
+}
+header img{
+    margin-top:48px;
+    width:100%;
+}
+nav{
+    position:fixed;
+    width: 60%;
+    list-style-type:none;
+    background-color:#311306;
+    padding: 15px;
+    box-sizing: border-box;
+}
+nav ul{
+    
+    width: 53%;
+    margin: 0 auto;
+}
+nav li{
+    display: inline-block;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: 550;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;    
+    padding: 6px 19px;
+
+}
+nav li a:hover{
+    background-color:#cc6633;
+}
+article{
+    float: left;
+    /* width:615px; */
+    width:65%;
+    margin: 20px;
+}
+article header{
+    margin-bottom: 30px;  
+}
+article header h1{
+    font-size: 2.5em;
+    font-style: italic;
+}
+article header h5{
+    color:rgb(139, 129, 129);
+    font-size: 1.1em;
+    font-weight:100;
+    margin-top:-17px;
+}
+article h1,h2,h4,h5{
+    color: #C63;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    margin: 25px 0px;
+}
+article p, article li{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 0.9em;
+    color:#555555;
+    text-align: justify;
+    line-height: 1.8;
+    padding:10px 0px;
+}
+article p{
+    padding:10px 0px;
+}
+article li{
+    margin-left: 30px;
+}
+aside p{
+    /* background-image:url(../imagens/aspas.gif); 
+    background-repeat: no-repeat;
+    background-position: left top;  */
+    background: url(/_img/aspas.gif) no-repeat left top;
+    color: black;
+    text-align: center;
+    border-top: 1px solid #C63;
+    border-bottom: 1px solid #C63;
+    padding:50px 10px 15px;
+    margin: 10px 20px 0 0;
+    float: left;
+    width: 230px;
+    font-style:italic;
+}
+#appetizer{
+    margin-top: 40px;
+}
+#appetizer img{
+    border-radius:50%;
+    width: 17%;
+    margin: 10px;
+    box-shadow: 1px 5px 5px #333;
+}
+form{
+    background-color: rgb(235, 235, 235);
+    padding: 15px 20px;
+}
+form p{
+    font-size: 1em;
+    color:#494646;
+    line-height: 0;
+    padding:10px 0px ;
+}
+#email::placeholder{
+    color:rgba(255, 0, 0, 0.486);
+}
+input{
+	height: 30px;
+    font: 0.9em 'Montserrat', sans-serif;
+    padding-left:5px;
+    border:1px solid #cfc6c6;
+}
+input[type="text"]{
+    /* width: 483px; */
+    width: 71%;
+}
+input[type="email"]{
+	width: 70.7%;
+}
+fieldset{
+    color:#494646;
+    border: 1px dashed rgba(119, 119, 119, 0.603);
+    width: 200px;
+    padding:15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /* margin-left: 60px; */
+}
+fieldset input, fieldset label{
+    /* padding:20px; */
+    height: 12px;
+    font: 0.9em 'Montserrat', sans-serif;
+    color:#494646;
+}
+textarea{
+    width:77.4%;
+    height:150px;
+    font: 0.9em 'Montserrat', sans-serif;
+    padding: 5px 5px;
+    border:1px solid #cfc6c6;
+}
+input[type="submit"], input[type="reset"]{
+	width: 25%;
+    height: 45px;
+	margin: 5px;
+	background-color: rgb(52, 92, 52);
+	color: #FFF;
+	font: 0.9em 'Montserrat', sans-serif;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: green;
+}
+#apoio{
+    margin-top:45px;
+    float:right;
+    /* width: 290px; */
+    width:30.5%;
+}
+.apoio-foto img{
+    width:94%;
+    box-shadow: 2px 2px 5px #333;
+    /* height: 100%; */
+    /* box-sizing: border-box; */
+}
+.apoio-foto a{
+    text-decoration:none;
+}
+footer{
+    clear:both;
+    text-align: center;
+    margin: 20px 0;
+    background-color:#ccc;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+footer p{
+    font-size:0.9em;
+    font-weight: 600;
+}
