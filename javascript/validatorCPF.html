@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>  
+        <script>
+            var cpf=prompt('Insira o seu CPF: ');
+            alert('CPF: '+cpf);
+            
+            function validationCPF(cpf){
+                var sum=0;
+                var validate= 'false';
+                switch(cpf){
+                    case '00000000000': case '11111111111': case '22222222222': case '33333333333':
+                    case '44444444444': case '55555555555': case '66666666666': case '77777777777':
+                    case '88888888888': case '99999999999':
+                        return 'false'; break;
+                }
+                for(var i=0;i<cpf.length;i++){
+                    sum+=parseInt(cpf.charAt(i));
+                }
+                switch(sum){
+                    case 10: case 11: case 12:
+                        validate= 'true';
+                        break;
+                    case 21: case 22: case 23:
+                        validate= 'true';
+                        break;
+                    case 31: case 33: case 34:
+                        validate= 'true';
+                        break;
+                    case 43: case 44: case 45:
+                        validate= 'true';
+                        break;  
+                    case 54: case 55: case 56:
+                        validate= 'true';
+                        break;
+                    case 65 : case 66: case 67:
+                        validate= 'true';
+                        break;
+                    case 76: case 77: case 78:
+                        validate= 'true';
+                        break;
+                    case 87: case 88:
+                        validate= 'true';
+                        break;
+                }
+                return validate;
+            }
+            result = validationCPF(cpf);
+            alert('Validade: '+result);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
