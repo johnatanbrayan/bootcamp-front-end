@@ -6,19 +6,19 @@
                 return a-b;
             }
             var megasena =[]
-            var lenghtMegasena = 6;
+            var lengthMegasena = 6;
             do{
-                for(var i=0;i<lenghtMegasena;i++){
+                for(var i=0;i<lengthMegasena;i++){
                     megasena.push(Math.floor((Math.random()*60)+1));
                     if(megasena.indexOf(megasena[i])){
                         megasena.splice(i,i);
-                        lenghtMegasena=7;
+                        lengthMegasena=7;
                     }
                 }
                 megasena.sort(orderNumber);
             
-                alert("Números da Megasena: "+megasena+".");
-                var repeat = confirm("Gerar outro número vencedor?");
+                alert("Numbers of Megasena: "+megasena+".");
+                var repeat = confirm("Generate another winner number?");
                 console.log(megasena);
                 megasena = [];
             }while(repeat == true);
