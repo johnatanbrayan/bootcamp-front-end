@@ -3,8 +3,14 @@
     <head>
         <script>
             var phrase = prompt("Enter your full name: ");
+            // alert("Your Name: "+phrase);
 
-            alert("Your Name: "+phrase);
+            firstName = phrase.split(" ")[0];
+            lastName = phrase.split(" ").slice(-1);
+
+            // alert(phrase.length);
+            alert("Welcome "+firstName+' '+lastName);
+
         </script>
     </head>
 </html>
