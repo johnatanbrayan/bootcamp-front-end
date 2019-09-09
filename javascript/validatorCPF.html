@@ -2,9 +2,11 @@
 <html>
     <head>  
         <script>
-            var cpf=prompt('Insira o seu CPF: ');
+            do{
+                var cpf=prompt('Insira o seu CPF: ');
+            }while(cpf == null || cpf == "");
             alert('CPF: '+cpf);
-            
+
             function validationCPF(cpf){
                 var sum=0;
                 var validate= 'false';

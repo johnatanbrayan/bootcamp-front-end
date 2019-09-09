@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function orderNumber(a,b){
+                return a-b;
+            }
+            var megasena =[]
+            var lenghtMegasena = 6;
+            do{
+                for(var i=0;i<lenghtMegasena;i++){
+                    megasena.push(Math.floor((Math.random()*60)+1));
+                    if(megasena.indexOf(megasena[i])){
+                        megasena.splice(i,i);
+                        lenghtMegasena=7;
+                    }
+                }
+                megasena.sort(orderNumber);
+            
+                alert("Números da Megasena: "+megasena+".");
+                var repeat = confirm("Gerar outro número vencedor?");
+                console.log(megasena);
+                megasena = [];
+            }while(repeat == true);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
