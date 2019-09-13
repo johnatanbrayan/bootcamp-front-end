@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta http-equiv="refresh" content="1"> -->
+        <script>
+            function twoDig(date){
+                if(date <10){
+                    return "0"+date;
+                }else{
+                    return date;
+                }
+            } 
+            var time = new Date();
+            var day = time.getDate();
+            var numMonth = time.getMonth()+1;
+            var stringMonth = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+            var year = time.getFullYear(); 
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var seconds = time.getSeconds();
+            
+            alert(twoDig(day)+"/"+twoDig(numMonth)+"/"+year+" "+twoDig(hour)+":"+twoDig(minute)+":"+twoDig(seconds));
+            alert("Mes: "+(stringMonth[time.getMonth()]).charAt(0).toUpperCase()+stringMonth[time.getMonth()].slice(1));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

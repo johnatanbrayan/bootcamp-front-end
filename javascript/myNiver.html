@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function twoDig(date){
+                if(date <10){
+                    return "0"+date;
+                }else{
+                    return date;
+                }
+            }
+            var myDateNiver = new Date(1996,4,14);
+            dayNiver = myDateNiver.getDate();
+            monthNiver = myDateNiver.getMonth()+1;
+            yearNiver =myDateNiver.getFullYear();
+            alert(twoDig(dayNiver)+'/'+twoDig(monthNiver)+'/'+twoDig(yearNiver));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
