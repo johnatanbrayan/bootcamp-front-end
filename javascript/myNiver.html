@@ -10,10 +10,13 @@
                 }
             }
             var myDateNiver = new Date(1996,4,14);
+            var stringDay = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
             dayNiver = myDateNiver.getDate();
             monthNiver = myDateNiver.getMonth()+1;
             yearNiver =myDateNiver.getFullYear();
+            dayOfWeekNiver = stringDay[myDateNiver.getDay()];
             alert(twoDig(dayNiver)+'/'+twoDig(monthNiver)+'/'+twoDig(yearNiver));
+            alert('I was born on '+dayOfWeekNiver);
         </script>
     </head>
     <body>
