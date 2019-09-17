@@ -1,0 +1,70 @@
+<head>
+    <style>
+        *{padding:0;margin:0;border:0;}
+        ul{
+            list-style-type: none;
+            position:fixed;
+            top:50px;
+            left:40px;
+            border: 4px solid black;
+        }
+        li{
+            background-repeat:no-repeat;
+            height:78px;
+            width:78px;
+            cursor:pointer;
+        }
+        #basketball{
+            background-image:url('./img/basquete.png');
+        }
+        #soccer{
+            background-image:url('./img/futebol.png');
+        }
+        #sneaker{
+            background-image:url('./img/tenis.png');
+        }
+        div{
+            /* height:800px; */
+            height:100%;
+            width:100%;
+        }
+        #first{
+            background-color:aquamarine;
+        }   
+        #second{
+            background-color:cadetblue;
+        }
+        #third{
+            background-color:coral;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="basketball"></li>
+            <li id="soccer"></li>
+            <li id='sneaker'></li>
+        </ul>
+    </nav>
+
+    <div id='first'></div>
+    <div id='second'></div>
+    <div id='third'></div>
+
+    <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            var timeScroll=480;
+            $('li#soccer').click(function(){
+                $('html body').animate({scrollTop:$('div#second').offset().top},timeScroll);
+            });
+            $('li#basketball').click(function(){
+                $('html body').animate({scrollTop:$('div#first').offset().top},timeScroll);
+            });
+            $('li#sneaker').click(function(){
+                $('html body').animate({scrollTop:$('div#third').offset().top},timeScroll);
+            });
+        });
+    </script>
+</body>
