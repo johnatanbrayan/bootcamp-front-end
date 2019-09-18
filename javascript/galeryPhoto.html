@@ -19,6 +19,7 @@
         img{
             width:256px;
             height: 192px;
+            /* position:absolute; */
         }
     </style>
 </head>
@@ -37,6 +38,14 @@
         <script>
                 // $("<li><img src='./img/8.jpg'></li>").insertAfter('li:last');
                 // $('h1').html('Realizando Teste');
+                function movePhoto(){
+                    $('ul').animate({left:'-=200'},500);
+                }
+                $(function(){
+                    setInterval(function(){
+                        movePhoto();
+                    },1000);
+                });
         </script>
 
 </body>

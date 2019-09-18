@@ -24,9 +24,13 @@
                 $('div#square').animate({left:800,bottom:200},500);
                 $('div#square').animate({bottom:500},500);
             });
+            var interval = setInterval(function(){
+                $("input[type='button']").click();
+            },1000);
             
-            $("input[type='button']").click();
-            $("input[type='button']").click();
+            setTimeout(function(){
+                clearInterval(interval);
+            },3000);
         });
     </script>
 </body>
