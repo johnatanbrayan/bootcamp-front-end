@@ -1,0 +1,32 @@
+<head>
+    <style>
+        #square{
+            width:200px;
+            height:200px;
+            background-color:cadetblue;
+            border:2px solid black;
+            position:absolute;
+        }
+        input{
+            margin:20px;
+            width:70px;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Action">
+    <div id="square"></div>
+    <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $("input[type='button']").on('click',function(){
+                $('div#square').animate({left:800,bottom:200},500);
+                $('div#square').animate({bottom:500},500);
+            });
+            
+            $("input[type='button']").click();
+            $("input[type='button']").click();
+        });
+    </script>
+</body>

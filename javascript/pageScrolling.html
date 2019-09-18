@@ -57,13 +57,13 @@
         $(function(){
             var timeScroll=480;
             $('li#soccer').click(function(){
-                $('html body').animate({scrollTop:$('div#second').offset().top},timeScroll);
+                $('html body').animate({scrollTop:$('div#second').offset().top},timeScroll,'swing');
             });
             $('li#basketball').click(function(){
-                $('html body').animate({scrollTop:$('div#first').offset().top},timeScroll);
+                $('html body').animate({scrollTop:$('div#first').offset().top},timeScroll,'swing');
             });
             $('li#sneaker').click(function(){
-                $('html body').animate({scrollTop:$('div#third').offset().top},timeScroll);
+                $('html body').animate({scrollTop:$('div#third').offset().top},timeScroll,'swing');
             });
         });
     </script>
