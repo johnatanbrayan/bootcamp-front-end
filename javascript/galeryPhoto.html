@@ -1,15 +1,31 @@
 <head>
     <style>
         *{padding:0;margin: 0;border: 0;}
-        div{
-            width: 80%;
-            margin: auto;
-        }
-        ul{
+        #little-bloco{
+            top: 48%;
+            left:43%;
             position: absolute;
-            top: 35%;
-            /* margin-top: 10px; */
+            height: 200px;
+            clip:rect(0 256px 192px 0);
+            width: 100%;
         }
+        #big-bloco{
+            top: 25%;
+            left:15.3%;
+            position: absolute;
+            height: 200px;
+            clip:rect(0 1280px 192px 0);
+            width: 100%;
+        }
+        /* ul{
+            position: absolute;
+        } */
+        #ul-little{
+            position: absolute;
+        }
+        #ul-bigger{
+            position: absolute;
+        }        
         li img{
             float:left;
         }
@@ -27,27 +43,62 @@
     </style>
 </head>
 <body>
-    <div>
-        <h1></h1>
-        <ul>
+    <div id="little-bloco">
+        <ul id="ul-little">
             <li><img src="./img/1.jpeg"></li>
             <li><img src="./img/2.jpeg"></li>
             <li><img src="./img/3.png"></li>
             <li><img src="./img/6.jpeg"></li>
             <li><img src="./img/5.jpg"></li>
+            <li><img src="./img/1.jpeg"></li>
         </ul>
+    </div>
+
+    <div id="big-bloco">
+            <ul id="ul-bigger">
+                <li><img src="./img/1.jpeg"></li>
+                <li><img src="./img/2.jpeg"></li>
+                <li><img src="./img/3.png"></li>
+                <li><img src="./img/6.jpeg"></li>
+                <li><img src="./img/5.jpg"></li>
+                <li><img src="./img/1.jpeg"></li>
+                <li><img src="./img/2.jpeg"></li>
+                <li><img src="./img/3.png"></li>
+                <li><img src="./img/6.jpeg"></li>
+                <li><img src="./img/5.jpg"></li>
+            </ul>
     </div>
         <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
         <script>
                 // $("<li><img src='./img/8.jpg'></li>").insertAfter('li:last');
                 // $('h1').html('Realizando Teste');
                 function movePhoto(){
-                    $('ul').animate({left:'-=200'},500);
+                    $('#ul-little').animate({left:'-=256'},1000,function(e){
+                        // console.log($('ul').position().left);
+                        if($('#ul-little').position().left == -1280){
+                            $('#ul-little').css('left',0);
+                        }
+                    });
+                }
+                function moveBiggerPhoto(){
+                    $('#ul-bigger').animate({left:'-=256'},1000,function(e){
+                        // console.log($('ul').position().left);
+                        console.log($('#ul-bigger').position().left);
+                        if($('#ul-bigger').position().left == -1280){
+                            $('#ul-bigger').css('left',0);
+                        }
+                    });
                 }
                 $(function(){
                     setInterval(function(){
                         movePhoto();
-                    },1000);
+                        moveBiggerPhoto();
+                    },2000);
+                });
+                $(function(){
+                    setInterval(function(){
+                        moveBiggerPhoto();
+                    },2000);
                 });
         </script>
 
